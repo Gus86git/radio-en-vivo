@@ -2,7 +2,7 @@
 // ¡REEMPLAZA ESTA URL CON LA DE TU STREAM REAL DE AUDIO!
 // Ejemplo: 'https://tuserver.com:8000/live.mp3'
 // Esta URL te la da tu servidor de streaming (Icecast/Shoutcast)
-const STREAM_URL = 'https://tu-servidor-de-streaming.com:8000/stream.mp3';
+const STREAM_URL = 'https://radio.garden/visit/isidro-casanova/ZSexL56z?hl=es';
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -156,4 +156,5 @@ document.addEventListener('DOMContentLoaded', function() {
         updateStatus('Transmitiendo en Vivo', 'online');
         console.log('Audio playing smoothly');
     });
+
 });
