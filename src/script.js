@@ -2,7 +2,7 @@
 // ¡REEMPLAZA ESTA URL CON LA DE TU STREAM REAL DE AUDIO!
 // Ejemplo: 'https://tuserver.com:8000/live.mp3'
 // Esta URL te la da tu servidor de streaming (Icecast/Shoutcast)
-const STREAM_URL = 'https://hlsliveamdgl8-lh.akamaihd.net/i/rnernecl_1@793296/master.m3u8';
+const STREAM_URL = 'https://icecast.radiofrance.fr/francemusique-midfi.mp3';
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 
 
 
