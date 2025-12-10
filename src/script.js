@@ -2,7 +2,7 @@
 // ¡REEMPLAZA ESTA URL CON LA DE TU STREAM REAL DE AUDIO!
 // Ejemplo: 'https://tuserver.com:8000/live.mp3'
 // Esta URL te la da tu servidor de streaming (Icecast/Shoutcast)
-const STREAM_URL = 'https://redirector.dps.live/rockandpop/aac/icecast.audio';
+const STREAM_URL = 'https://radioclassique.ice.infomaniak.ch/radioclassique-high.mp3';
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 
 
 
