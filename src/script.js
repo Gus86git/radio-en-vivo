@@ -2,7 +2,7 @@
 // ¡REEMPLAZA ESTA URL CON LA DE TU STREAM REAL DE AUDIO!
 // Ejemplo: 'https://tuserver.com:8000/live.mp3'
 // Esta URL te la da tu servidor de streaming (Icecast/Shoutcast)
-const STREAM_URL = 'https://stream-mz.planetradio.co.uk/net1national.aac';
+const STREAM_URL = 'https://server1.armastreaming.com:2199/tunein/radiorock90s.pls';
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 
 
 
