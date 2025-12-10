@@ -1,0 +1,50 @@
+# Configuración de Netlify para Radio en Vivo
+# Archivo: netlify.toml (en la raíz del proyecto)
+
+[build]
+  # Netlify servirá los archivos desde la carpeta 'src'
+  publish = "src"
+  
+  # Comando de construcción (vacío porque es HTML estático)
+  command = "echo '✅ Sitio de radio listo para despliegue'"
+
+# Configuración para funciones serverless (opcional para futuro)
+[functions]
+  directory = "netlify/functions"
+
+# Configuración de cabeceras para seguridad y CORS
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Redirecciones (útil si añades más páginas después)
+[[redirects]]
+  from = "/programacion"
+  to = "/index.html#schedule"
+  status = 301
+
+[[redirects]]
+  from = "/contacto"
+  to = "/index.html#contact"
+  status = 301
+
+# Para Single Page Application (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Configuración básica (opcional)
+[context.production.environment]
+  RADIO_NAME = "Mi Radio En Vivo"
+  RADIO_STREAM_URL = "https://tu-servidor-de-streaming.com:8000/stream.mp3"
+
+[context.deploy-preview.environment]
+  RADIO_NAME = "Mi Radio En Vivo (Preview)"
+  
+[context.branch-deploy.environment]
+  RADIO_NAME = "Mi Radio En Vivo (Development)"
