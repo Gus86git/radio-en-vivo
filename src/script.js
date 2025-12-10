@@ -2,7 +2,7 @@
 // ¡REEMPLAZA ESTA URL CON LA DE TU STREAM REAL DE AUDIO!
 // Ejemplo: 'https://tuserver.com:8000/live.mp3'
 // Esta URL te la da tu servidor de streaming (Icecast/Shoutcast)
-const STREAM_URL = 'ttps://cdn.instream.audio/:9117/stream';
+const STREAM_URL = 'https://radionacional.com.ar/live.mp3';
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -158,4 +158,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 
